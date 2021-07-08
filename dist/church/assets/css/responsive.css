@@ -1,0 +1,571 @@
+
+@media (min-width: 1200px){
+.container {
+    max-width: 1170px;
+}
+.start-header .container {
+    max-width: 1260px;
+}
+
+
+
+
+}
+@media (max-width: 767.98px) {
+.start-header {
+	
+	padding: 10px 0;
+	
+}
+.bannerarea .rhttext {
+    max-width: 100%;
+    float: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+.bannerarea .rht {
+    max-width: 100%;
+    float: none;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+.bannerarea .rhttext .bannerarea_textbox .logoicon {
+	
+	display: none;
+}
+.bannerarea .rht #sync1 .img-hldr {
+	
+	height: 300px;
+	
+}
+.bannerarea .rhttext .bannerarea_textbox {
+	max-width: 409px;
+	float: left;
+	padding: 70px;
+}
+.bannerarea .rhttext .bannerarea_textbox h1 {
+	
+	font-size: 30px;
+
+	margin-bottom: 40px;
+}
+.bannerarea .rhttext {
+	max-width: auto;
+	width: auto;
+	
+}
+.bannerarea .rht #sync2 img {
+	/* width: 120px; */
+	height: 60px;
+	
+}
+.bannerarea {
+	
+	margin-top: 64px;
+}
+.bannerarea  .btn-light {
+	padding: 7px 16px;
+	border-radius: 0 20px 20px;
+	box-shadow: 0px 2px 0px #ed1c24;
+	font-size: 12px;
+}
+.bannerarea .rhttext .bannerarea_textbox h1 {
+    font-size: 30px;
+    margin-bottom: 24px;
+    color: #fff;
+    text-shadow: 2px 2px #00000054;
+}
+.bannerarea .rhttext .bannerarea_textbox {
+	
+	padding-top: 119px;
+}
+.menu ul li:hover ul li a {
+	color: #fff;
+}
+.menu ul li:hover ul li a:hover {
+	color: #000;
+}
+.menu ul li ul li {
+	border-bottom:none;
+}
+.becomemember_area .becomememberleft .becomememberleftthumble {
+	
+	display: none;
+}
+.becomemember_area .becomememberight_textbox {
+	padding: 0;
+}
+.becomemember_area {
+	padding: 40px 0;
+}
+.becomemember_area .becomememberleft::before {
+	
+	display: none;
+}
+.becomemember_area .becomememberleft::after {
+	
+	display: none;
+}
+.gallery_area ul li:first-child img {
+	max-width: 180px;
+	height: 180px;
+	margin: 0;
+}
+.gallery_area ul li:nth-of-type(2) img {
+	max-width: 180px;
+	height: 180px;
+	overflow: hidden;
+	border-radius: 0 30px;
+}
+.gallery_area ul li:nth-of-type(3) img {
+	max-width: 180px;
+	height: 180px;
+	overflow: hidden;
+	border-radius: 0 30px;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+.gallery_area .hedingbox {
+	position: relative;
+	right: 0;
+	top: 0;
+}
+.gallery_area ul li:nth-of-type(4) img {
+	max-width: 180px;
+	height: 180px;
+	overflow: hidden;
+	border-radius: 0 30px;
+	margin-top: 0;
+	margin-left: 0;
+}
+.gallery_area ul li:nth-of-type(5) img{
+	max-width: 180px;
+	height: 180px;
+	overflow: hidden;
+	border-radius: 0 30px;
+	margin-top: 0;
+	margin-left: 0;
+}
+.gallery_area ul li:nth-of-type(5) {
+	max-width: 247px;
+	height: auto;
+	overflow: hidden;
+	border-radius: 0 30px;
+	margin-top: 5px;
+	margin-left: 0;
+}
+.p-9 {
+	padding: 30px 0;
+}
+.gallery_area {
+	padding-bottom: 10px !important;
+}
+.ourblog_box {
+	
+	max-width: 330px;
+	margin: auto;
+	margin-top: 30px;
+}
+.gallery_area {
+	position: relative;
+	padding-top: 15px !important;
+}
+.gallery_area ul li:nth-of-type(6) img {
+	max-width: 180px;
+	height: 180px;
+	overflow: hidden;
+	border-radius: 0 30px;
+	position: relative;
+	bottom: auto;
+	left: 0;
+	object-fit: cover;
+}
+.our_blogarea h2 {
+	font-size: 34px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+	
+}
+.our_blogarea h2 small::after {
+	
+	top: -40px;
+	background-image: url(../images/afterimg1.png);
+	width: 4px;
+	height: 36px;
+	
+}
+ul.footermenu li a {
+	padding: 4px 9px;
+	
+	font-size: 10px;
+	
+}
+ul.footermenu li a::after {
+	
+	top: 4px;
+	color: #fff;
+	font-size: 9px;
+}
+.footer_top {
+	padding-top: 24px;
+	text-align: center;
+}
+.footer_top .footer_logo {
+	
+	max-width: 220px;
+	margin: auto;
+	margin-bottom: 15px;
+}
+ul.footeradress li a span {
+	margin-right: 5px;
+	width: 26px;
+	height: 26px;
+	line-height: 24px;
+	font-size: 10px;
+}
+.gallery_area h2 {
+	font-size: 34px;
+	
+	margin-bottom: 20px;
+}
+.becomememberight_textbox h2 {
+	font-size: 40px;
+	
+	margin-bottom:30px;
+	line-height: 40px;
+}
+ul.footerapplogo li {
+	max-width: 130px;
+}
+ul.footerapplogo li:last-child {
+	max-width: 110px;
+}
+.ministries_area .ministries_leftbox h2 {
+	font-size: 34px;
+	
+	margin-bottom:30px;
+}
+.ourservices_area h2 {
+	font-size: 34px;
+	
+	margin-bottom: 30px;
+	
+}
+.aboutus_area .aboutus_right h2 {
+	font-size: 40px;
+	
+}
+.aboutus_area .aboutus_left img.bigimg {
+	display: flex;
+	height: 386px;
+}
+.aboutus_area .aboutus_left .ministries_thummini {
+	
+	max-width: 149px;
+	
+	height: 156px;
+	
+}
+.latest_messagearea .latest_message_left h2 {
+	font-size: 38px;
+	margin-bottom: 10px;
+}
+.latest_messagearea .latest_message_left h2 small {
+	
+	font-size: 13px;
+	margin-bottom: 10px;
+	line-height: 16px;
+}
+.latest_messagearea .latest_message_left {
+	position: relative;
+	background-color: #ed1c24;
+	min-height: auto;
+	box-sizing: border-box;
+	padding: 8px 0;
+}
+.latest_messagearea .latest_message_right {
+	text-align: left;
+	box-sizing: border-box;
+	padding:15px 0 ;
+}
+.latest_messagearea {
+	overflow: hidden;
+	background-color: #262262;
+	min-height: auto;
+}
+.footer_bottom p {
+
+	font-size: 12px;
+	
+}
+.sermon_box .sermontexbox {
+position: relative;
+background-color: #fff;
+z-index: 9;
+width: 100%;
+right: 0;
+bottom: 0;
+box-sizing: border-box;
+padding: 20px;
+}
+.sermon_box img.sermonthumble {
+max-width: 100%;
+width: 100%;
+height: 250px;
+}
+.sermon_box {
+max-width: 370px;
+margin: auto;
+margin-top: 24px;
+}
+.sermon_box .sermontexbox h4 {
+font-size: 20px;
+line-height: 30px;
+margin-bottom: 15px;
+}
+.sermon_box .sermontexbox .dated {
+font-size: 14px;
+margin-bottom: 5px;
+}
+.sermon_box .sermontexbox h5 {
+font-size: 15px;
+
+}
+.sermon_box .sermontexbox .btnarea {
+margin-top: 10px;
+}
+.missionarybox.p-5 {
+padding: 0!important;
+}
+.missionarybox .media {
+padding: 5px;
+margin-top: 10px;
+display: block;
+}
+.missionarybox .media img {
+max-width: 100%;
+height: auto;
+object-fit: cover;
+width: 100%;
+}
+.media-body {
+padding: 10px;
+}
+
+}
+
+@media (max-width: 479.98px) {
+
+.bannerarea .rht #sync2 {
+	position: relative;
+	
+}
+.bannerarea .rhttext .bannerarea_textbox {
+	max-width: 100%;
+	padding: 30px;
+	padding-top: 120px;
+}
+.aboutus_area .aboutus_left img.bigimg {
+	display: flex;
+	height: 300px;
+}
+.aboutus_area .aboutus_left .ministries_thummini {
+	max-width: 160px;
+	height: 180px;
+	right: -130px;
+}
+.video-play-button span {
+	border-left: 20px solid #fff;
+	border-top: 14px solid transparent;
+	border-bottom: 14px solid transparent;
+	top: 8px;
+	left: 5px;
+}
+.video-play-button::after {
+	
+	width: 64px;
+	height: 64px;
+	
+}
+.video-play-button::before {
+	
+	width: 64px;
+	height: 64px;
+	
+}
+.aboutus_area .aboutus_right {
+	box-sizing: border-box;
+	padding: 19px 10px;
+}
+.gallery_area .afterimg {
+	
+	display: none;
+}
+.menu ul li {
+	
+	padding: 8px 15px 8px 15px;
+	
+}
+.menu ul li span {
+	
+	right: 15px;
+	
+}
+.ministries_area .ministries_rightbox {
+	
+	display: none;
+}
+.subbanner_area {
+	min-height: 90px;
+	margin-top: 66px;
+}
+.subbanner_area h2 {
+	font-size: 14px;
+	
+}
+.contact_textbox h2 {
+	font-size: 24px;
+	
+}
+.contact_textbox.pr-5 {
+	padding-right: 0 !important;
+}
+.contact_textbox hr {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.contact_iconbox .con_icon i {
+	
+	font-size: 24px;
+	top: 4px;
+	
+}
+.contact_textbox.pl-4 {
+	padding-left: 0 !important;
+	margin-top: 24px;
+}
+.sermon_dtles iframe{ height: 200px; }
+.sermon_dtles h2 {
+    
+    font-size: 24px;
+    
+}
+.services_dtles h2 {
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+.services_dtles .dated {
+	font-size: 16px;
+	font-weight: 700;
+	color: #292564;
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+.services_dtles p {
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 15px;
+	
+}
+.sermon_dtles h2 {
+	
+	line-height: 30px;
+}
+.sermon_dtles h5 {
+	
+	margin-bottom: 10px;
+}
+.sermon_dtles .dated {
+	
+	margin-bottom: 5px;
+}
+.sermon_dtles p {
+	margin-bottom: 20px;
+	font-size: 16px;
+	color: #000;
+}
+.sermon_dtles .btnarea .btn-light {
+	
+	font-size: 13px;
+	margin-right: 3px;
+	padding: 7px 18px;
+}
+.becomememberight_textbox h2 {
+	font-size: 30px;
+	line-height: 30px;
+}
+.becomememberight_textbox h2 small {
+	
+	font-size: 13px;
+	
+}
+.meetourteam_box img.teamicon {
+	height: 300px;
+
+}
+.meetourteam_box .teambox h3 {
+	
+	font-size: 20px;
+	line-height: 26px;
+	
+}
+.meetourteam_box .teambox {
+	
+	padding: 10px 12px;
+	
+}
+.aboutus_area .aboutus_right {
+	
+	padding: 19px 0px;
+}
+.meetourteam_box {
+	margin-top: 0;
+	max-width: 300px;
+	margin: auto;
+	margin-bottom: 24px;
+}
+.services_dtles h2 img {
+	max-width: 40px;
+	margin-right: 10px;
+}
+	.aboutus_area .aboutus_left {
+position: relative;
+max-width: 100%;
+float: left;
+margin-top: 0;
+margin-left: 15px;
+width: 96%;
+}.aboutus_area .aboutus_left .ministries_thummini {
+right: 0;
+    /* bottom: 0; */
+    top: 240px;
+    max-width: 139px;
+    height: 143px;
+}
+}
+@media (max-width: 410px) {
+	.gallery_area ul li:first-child img {
+	max-width: 230px;
+	height: 200px;
+	margin: 0;
+}
+.ministries_area .ministries_leftbox .media .media-body h5 {
+	
+	font-size: 28px;
+	
+}
+.start-header .logomain {
+	float: left;
+	max-width: 260px;
+}
+
+.bannerarea .rht #sync1 .img-hldr {
+	height: 260px;
+}
+
+}
