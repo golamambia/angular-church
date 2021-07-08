@@ -1,0 +1,54 @@
+
+<div class="subbanner_area" style="background-image:url(assets/images/innerbanner.jpg);">
+  <div class="container">
+      <h2>Sermon</h2>
+    </div>
+ </div>
+
+<div class="mainarea p-9 pt-5">
+  <div class="container">
+    <div class="row" ng-app="myApp">
+
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12" *ngFor="let dataSermon of data_sermon">
+           <div class="sermon_box">
+             <img class="sermonthumble" src="{{img_url}}sermon/{{dataSermon.icon}}" alt="">
+             <div class="sermontexbox">
+               <div class="dated"><i class="far fa-clock"></i> {{dataSermon.created_at | date:'MMM dd, yyyy'}}</div>
+               <h4>{{dataSermon.title}}</h4>
+               <!-- <h5>Passage: <span>Psalms 119:67</span></h5> -->
+               <div class="btnarea" ng-controller="myController">
+                 <a data-fancybox href="#media5{{dataSermon.id}}" class="btn btn-light" >Listen</a>
+           <a *ngIf="dataSermon.video_link" data-fancybox href="{{dataSermon.video_link}}" class="btn btn-light bg1">Watch</a>
+            <a *ngIf="!dataSermon.video_link" data-fancybox href="{{img_url}}sermon/{{dataSermon.video_file}}" class="btn btn-light bg1">Watch</a>
+                 <a *ngIf="dataSermon.audio_file" (click)="download(dataSermon.audio_file)" class="btn btn-light bg1">Mp3 Download</a>
+                 <a *ngIf="dataSermon.video_file" (click)="download(dataSermon.video_file)" class="btn btn-light bg1">Mp4 Download</a>
+                 
+               </div>
+             </div>
+           </div>
+
+<div id="media5{{dataSermon.id}}" class="" style="display: none;">
+
+     <audio controls id="aud{{dataSermon.id}}" *ngIf="dataSermon.audio_link">
+  <source src="{{dataSermon.audio_link}}" type="audio/ogg">
+  <source src="{{dataSermon.audio_link}}" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+  <audio controls id="aud{{dataSermon.id}}" *ngIf="!dataSermon.audio_link">
+  <source src="{{img_url}}sermon/{{dataSermon.audio_file}}" type="audio/ogg">
+  <source src="{{img_url}}sermon/{{dataSermon.audio_file}}" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>    </div>
+
+
+       </div>
+
+       <ngx-spinner bdColor="rgb(51 51 51 / 28%)" size="default" type="ball-spin-clockwise">  
+    <!-- <p style="color: white">Please Wait. </p> -->  
+    </ngx-spinner>
+
+
+    </div>
+  </div>
+</div>

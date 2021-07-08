@@ -1,0 +1,43 @@
+<div class="subbanner_area" style="background-image:url(assets/images/innerbanner.jpg);">
+  <div class="container">
+      <h2>Become a member</h2>
+    </div>
+ </div>
+<!---becomemember_area  start -->
+<div class="becomemember_area" style="background-color: black">
+  <div class="container clearfix">
+    <div class="row">
+       <div class="col-lg-7 m-auto becomememberight">
+         <div class="becomememberight_textbox">
+          <h2><strong><small>Become a member</small></strong>Send a Request</h2>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Name" [(ngModel)]="name" >
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Phone no" [(ngModel)]="phone" (keypress)="onlyNumberKey($event)" maxlength="12">
+          </div>
+          <div class="form-group">
+          
+           <input type="text" placeholder="Email" [(ngModel)]="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="email"name="email" ngModel #emailref="ngModel">
+          <div *ngIf="emailref.errors &&(emailref.touched || emailref.dirty)" class ="alert alert-danger">
+           <div [hidden]="!emailref.errors?.pattern">
+             Invalid pattern
+           </div> 
+          </div> 
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" placeholder="Message :" [(ngModel)]="message" ></textarea>
+          </div>
+          <button [hidden]="emailref.errors?.pattern" type="button" (click)="becomMember()" class="btn btn-light mt-3" >Submit Now</button> 
+         </div>
+       </div>
+       <ngx-spinner bdColor="rgb(51 51 51 / 28%)" size="default" type="ball-spin-clockwise">  
+    <p style="color: white">Please Wait. </p>  
+    </ngx-spinner>
+    </div>
+
+ 
+
+
+  </div>
+</div>

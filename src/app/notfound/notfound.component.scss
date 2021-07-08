@@ -1,0 +1,19 @@
+#mainC {
+padding: 140px 0;
+}
+#mainC .message {
+font-size: 16px;
+text-align: center;
+}
+#mainC .message h1 {
+margin: 0;
+padding: 0;
+font-size: 11em;
+transform: skewY(-5deg);
+transition: 0.4s ease-in-out all;
+text-shadow: 8px 8px 0 rgb(0 0 0 / 13%);
+}
+#mainC .message h1:hover {
+text-shadow: 8px 8px 0 rgb(0 0 0 / 10%);
+}
+.message h3{ text-transform:capitalize; font-size:16px;}

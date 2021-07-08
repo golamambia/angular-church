@@ -1,0 +1,14 @@
+<div class="subbanner_area" style="background-image:url(assets/images/innerbanner.jpg);">
+  <div class="container" >
+      <h2>Service Details  </h2>
+    </div>
+ </div>
+
+ <div class="mainarea p-9">
+   <div class="container">
+     <div class="services_dtles">
+         <h2><img src="{{img_url}}service/{{service_data?.icon}}" alt="">{{ service_data?.title}}</h2>
+         <p [innerHtml]="service_data?.long_description"></p>
+     </div>
+   </div>
+ </div>

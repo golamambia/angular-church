@@ -1,0 +1,127 @@
+<div class="subbanner_area" style="background-image:url(assets/images/innerbanner.jpg);">
+  <div class="container">
+      <h2>about us </h2>
+    </div>
+ </div>
+
+
+ <div class="aboutus_area p-9">
+   <div class="container">
+    <div class="afterimg">
+    <img src="assets/images/dotpng1.png">  
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <div class="aboutus_left">
+          <img class="bigimg" src="{{img_url}}about/{{about_info_data?.about_icon}}" alt="">
+
+           <a id="play-video" class="video-play-button" data-fancybox="" href="{{about_info_data?.video_link}}">
+              <span></span>
+           </a>
+
+          <div class="ministries_thummini">
+            <img src="{{img_url}}about/{{about_info_data?.about_icon2}}" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <div class="aboutus_right">
+          <h2><strong><small>About Our Church</small></strong>{{about_info_data?.title1}}</h2>
+          <div [innerHTML]="about_info_data?.about_us"></div>
+
+          
+        </div>
+      </div>  
+    </div>
+  </div>
+ </div>
+ <div class="ministries_area p-9 pt-0">
+  <div class="container">
+    <div class="afterimg">
+    <img src="assets/images/dotpng1.png">  
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <div class="ministries_leftbox">
+         <h2><strong><small>About Our Church</small></strong>{{about_info_data?.title2}}</h2>
+
+         <div class="media">
+          <div class="media-body">
+           <div [innerHTML]="about_info_data?.who_we"></div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <div class="ministries_rightbox">
+            <img class="bigimg" src="{{img_url}}about/{{about_info_data?.who_we_icon}}">
+            <div class="ministries_thummini">
+              <img src="{{img_url}}about/{{about_info_data?.who_we_icon2}}">
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<ngx-spinner bdColor="rgb(51 51 51 / 28%)" size="default" type="ball-spin-clockwise">  
+    <!-- <p style="color: white">Please Wait. </p> -->  
+    </ngx-spinner>
+<div class="becomemember_area" style="background-image:url({{img_url}}{{pray_bg?.image1}});">
+  <div class="container clearfix">
+    <div class="row">
+       <div class="col-lg-7 becomememberight">
+         <div class="becomememberight_textbox">
+          <h2><strong><small>send us your prayer request</small></strong>Send a Prayer Request</h2>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Name" [(ngModel)]="name" >
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" (keypress)="onlyNumberKey($event)" maxlength="12" placeholder="Phone no" [(ngModel)]="phone" >
+          </div>
+          <div class="form-group">
+          
+           <input type="text" placeholder="Email" [(ngModel)]="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="email"name="email" ngModel #emailref="ngModel">
+          <div *ngIf="emailref.errors &&(emailref.touched || emailref.dirty)" class ="alert alert-danger">
+           <div [hidden]="!emailref.errors?.pattern">
+             Invalid pattern
+           </div> 
+          </div> 
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" placeholder="Message :" [(ngModel)]="message" ></textarea>
+          </div>
+          <button [hidden]="emailref.errors?.pattern" type="button" (click)="becomMember()" class="btn btn-light mt-3" >Submit Now</button> 
+         </div>
+       </div>
+       <div class="col-lg-5 becomememberleft">
+         <div class="becomememberleftthumble">
+           <img src="{{img_url}}{{pray_bg?.image2}}" alt=""> 
+         </div>
+       </div>
+    </div>
+  </div>
+</div>
+ <ngx-spinner bdColor="rgb(51 51 51 / 28%)" size="default" type="ball-spin-clockwise">  
+    <p style="color: white">Please Wait. </p>  
+    </ngx-spinner>
+<div class="our_blogarea meetourteam_area p-9">
+  <div class="container">
+     <h2><strong><small>Our staff</small></strong>Meet Our Team</h2>
+     
+     <div class="owl-carousel team-slider">
+
+
+     <div class="meetourteam_box" *ngFor="let data_list of file_list">
+             <img class="teamicon" src="{{img_url}}staff/{{data_list.icon}}" alt=""> 
+              <div class="teambox">
+                <h3>{{data_list.title}}<small>{{data_list.short_description}}</small></h3>
+              </div>
+           </div>
+
+          
+
+
+     </div>
+   
+  </div>
+</div>

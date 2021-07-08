@@ -1,0 +1,27 @@
+<div class="subbanner_area" style="background-image:url(assets/images/innerbanner.jpg);">
+  <div class="container">
+      <h2>Services </h2>
+    </div>
+ </div>
+
+ <div class="mainarea p-9 pt-5">
+   <div class="container">
+    <div class="row">
+
+       <div class="col-lg-4 col-md-6 col-sm-6 col-12" *ngFor="let data_list of service_list">
+         <div class="ourservices_box">
+          <div class="icon"><img src="{{img_url}}service/{{data_list.icon}}" alt=""></div>
+          <h4>{{data_list.title}}</h4>
+          <p>{{data_list.short_description}}...</p>
+          <a routerLink="/service-details/{{data_list.id}}" class="btn btn-link">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
+         </div>
+       </div>
+     
+
+       <ngx-spinner bdColor="rgb(51 51 51 / 28%)" size="default" type="ball-spin-clockwise">  
+    <!-- <p style="color: white">Please Wait. </p> -->  
+    </ngx-spinner>
+
+     </div>
+   </div>
+ </div>

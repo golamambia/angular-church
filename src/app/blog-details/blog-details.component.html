@@ -1,0 +1,18 @@
+<div class="subbanner_area" style="background-image:url(assets/images/innerbanner.jpg);">
+  <div class="container" >
+      <h2>Blog Details  </h2>
+    </div>
+ </div>
+
+ <div class="mainarea p-9">
+   <div class="container">
+     <div class="services_dtles">
+         <h2>{{ blog_data?.title}}</h2>
+         <div class="dated"><i class="far fa-clock"></i> {{blog_data?.created_at | date:'MMM dd, yyyy'}}</div>
+         <div class="blogdtls">
+          <img src="{{img_url}}blog/{{blog_data?.icon}}" alt="">
+         </div>
+         <p [innerHtml]="blog_data?.long_description"></p>
+     </div>
+   </div>
+ </div>

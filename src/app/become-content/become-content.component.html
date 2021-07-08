@@ -1,0 +1,33 @@
+<div class="subbanner_area" style="background-image:url(assets/images/innerbanner.jpg);">
+  <div class="container">
+      <h2>Become a member</h2>
+    </div>
+ </div>
+
+
+ <div class="aboutus_area p-9">
+   <div class="container">
+ 
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <div class="aboutus_left">
+          <img class="bigimg" src="{{img_url}}about/{{about_info_data?.img}}" alt="">
+
+         
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <div class="aboutus_right">
+          <h2>{{about_info_data?.title}}</h2>
+          <div [innerHTML]="about_info_data?.description"></div>
+
+          
+        </div>
+      </div>  
+    </div>
+  </div>
+ </div>
+
+<ngx-spinner bdColor="rgb(51 51 51 / 28%)" size="default" type="ball-spin-clockwise">  
+    <!-- <p style="color: white">Please Wait. </p> -->  
+    </ngx-spinner>

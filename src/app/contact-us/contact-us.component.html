@@ -1,0 +1,107 @@
+
+
+<div class="subbanner_area" style="background-image:url(assets/images/innerbanner.jpg);">
+  <div class="container">
+      <h2>contact us </h2>
+    </div>
+ </div>
+
+ <div class="mainarea p-9">
+   <div class="container">
+     <div class="row">
+            <div class="col-lg-6">
+              <div class="contact_textbox pr-5">
+                 <h2>CONTACT INFO</h2>
+                 <p>Welcome to our Website. We are glad to have you around.</p>
+                 <span class="line"></span>
+                 <div class="contact_iconbox">
+                   <div class="row">
+                     <div class="col-lg-12"><hr></div>
+                      <div class="col-lg-6">
+                         <div class="con_icon">
+                           <i class="fas fa-phone-alt"></i>
+                           <strong>Phone</strong>
+                           {{coninfo_data?.phone}}
+                         </div>
+                      </div>
+                      <div class="col-lg-6">
+                         <div class="con_icon">
+                           <i class="fas fa-envelope-open"></i>
+                           <strong>Email</strong>
+                           {{coninfo_data?.email}}
+                         </div>
+                      </div>
+                      <div class="col-lg-12"><hr></div>
+                      <div class="col-lg-12">
+                         <div class="con_icon">
+                           <i class="fas fa-map-marker-alt"></i>
+                           <strong>Address</strong>
+                           {{coninfo_data?.address}}
+                         </div>
+                      </div>
+                      <div class="col-lg-12"><hr></div>
+                      <div class="col-lg-12">
+                      <div class="con_icon">
+                       <i class="fas fa-share-alt"></i>
+                        <strong>social media</strong>
+                        <div class="socalbox">
+                           <ul>
+                                <li><a href="{{coninfo_data?.facebook}}" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                <li><a href="{{coninfo_data?.twitter}}" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="{{coninfo_data?.linkedin}}" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                        </div>
+                      </div>
+                   </div>
+                 </div>
+              </div>
+            </div>
+            
+            
+            <div class="col-lg-6">
+              <div class="contact_textbox pl-4">
+                 <h2>SEND A MESSAGE</h2>
+                 <p>Your email address will not be published. Required fields are marked.</p>
+                 <span class="line"></span>
+                 
+                 
+             <div class="contactform_box">
+         
+              <div class="form-group">
+            <input type="text" class="form-control" placeholder="Name" [(ngModel)]="name" >
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" (keypress)="onlyNumberKey($event)" maxlength="12" placeholder="Phone no" [(ngModel)]="phone" >
+          </div>
+          <div class="form-group">
+          
+           <input type="text" placeholder="Email" [(ngModel)]="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="email"name="email" ngModel #emailref="ngModel">
+          <div *ngIf="emailref.errors &&(emailref.touched || emailref.dirty)" class ="alert alert-danger">
+           <div [hidden]="!emailref.errors?.pattern">
+             Invalid pattern
+           </div> 
+          </div> 
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" placeholder="Message :" [(ngModel)]="message" ></textarea>
+          </div>
+
+             <button [hidden]="emailref.errors?.pattern" type="button" (click)="becomMember()" class="btn btn-light mt-3" >Submit Now</button> 
+
+             </div>
+                 
+              </div>
+            </div>
+            <ngx-spinner bdColor="rgb(51 51 51 / 28%)" size="default" type="ball-spin-clockwise">  
+    <p style="color: white">Please Wait. </p>  
+    </ngx-spinner>
+
+
+         </div>
+   </div>
+ </div>
+
+<div class="mapbox">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3093.105083721095!2d-84.51816078528073!3d39.17233173829726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8841b35dea1d0835%3A0x8d7e7878d2d20c1b!2s4600%20N%20Edgewood%20Ave%2C%20Cincinnati%2C%20OH%2045232%2C%20USA!5e0!3m2!1sen!2sin!4v1615443368834!5m2!1sen!2sin" width="" height="" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+ </div>

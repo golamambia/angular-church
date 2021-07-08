@@ -1,0 +1,22 @@
+<div class="subbanner_area" style="background-image:url(assets/images/innerbanner.jpg);">
+  <div class="container">
+      <h2>Staff </h2>
+    </div>
+ </div>
+
+ <div class="mainarea p-9">
+   <div class="container">
+     <div class="row">
+
+       <div class="col-lg-4 col-md-6 col-sm-6 col-12" *ngFor="let data_list of file_list">
+         <div class="meetourteam_box">
+             <img class="teamicon" src="{{img_url}}staff/{{data_list.icon}}" alt=""> 
+              <div class="teambox">
+                <h3>{{data_list.title}}<small>{{data_list.short_description}}</small></h3>
+              </div>
+           </div>
+       </div>
+      
+     </div>
+   </div>
+ </div>

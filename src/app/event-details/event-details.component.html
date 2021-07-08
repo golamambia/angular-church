@@ -1,0 +1,14 @@
+<div class="subbanner_area" style="background-image:url(assets/images/innerbanner.jpg);">
+  <div class="container" >
+      <h2>Event Details  </h2>
+    </div>
+ </div>
+
+ <div class="mainarea p-9">
+   <div class="container">
+     <div class="services_dtles">
+         <h2><img src="{{img_url}}event/{{event_data?.icon}}" alt="">{{ event_data?.title}}</h2>
+         <p [innerHtml]="event_data?.long_description"></p>
+     </div>
+   </div>
+ </div>

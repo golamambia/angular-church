@@ -1,0 +1,20 @@
+<div class="subbanner_area" style="background-image:url(assets/images/innerbanner.jpg);">
+  <div class="container">
+      <h2>Statement of faith</h2>
+    </div>
+ </div>
+
+ <div class="mainarea p-9">
+   <div class="container">
+     <div class="services_dtles">
+         <h2>{{info_data?.title}}</h2>
+         <div class="blogdtls">
+           <img src="{{img_url}}about/{{info_data?.img}}" alt="">
+         </div>
+         <div [innerHTML]="info_data?.long_description"></div>
+     </div>
+   </div>
+ </div>
+ <ngx-spinner bdColor="rgb(51 51 51 / 28%)" size="default" type="ball-spin-clockwise">  
+    <!-- <p style="color: white">Please Wait. </p> -->  
+    </ngx-spinner>

@@ -1,0 +1,28 @@
+<div class="subbanner_area" style="background-image:url(assets/images/innerbanner.jpg);">
+  <div class="container">
+      <h2>missionary</h2>
+    </div>
+ </div>
+
+<div class="mainarea missionarybox p-5">
+  <div class="container">
+    <div class="row">
+
+       <div class="col-md-6 d-flex align-items-stretch" *ngFor="let data_miss of data_missions">
+         <div class="media">
+          <img class="d-flex mr-3" src="{{img_url}}mission/{{data_miss.icon}}" alt="Generic placeholder image">
+          <div class="media-body">
+            <h5 class="mt-0">{{data_miss.name}}</h5>
+            <div [innerHtml]="data_miss.long_description"></div>
+            <a href="javascript:void(0)" *ngIf="data_miss.pdf_file" (click)="download(data_miss.pdf_file)" class="btn btn-light">download now</a>
+          </div>
+        </div>
+       </div> 
+        
+      
+    </div>
+    <ngx-spinner bdColor="rgb(51 51 51 / 28%)" size="default" type="ball-spin-clockwise">  
+    <!-- <p style="color: white">Please Wait. </p> -->  
+    </ngx-spinner>
+  </div>
+</div>

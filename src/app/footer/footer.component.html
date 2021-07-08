@@ -1,0 +1,42 @@
+
+<!-- footer css Start -->
+  <footer class="footer" style="background-image:url(assets/images/footerbg.jpg);">
+     <div class="footer_top">
+       <div class="container">
+         <div class="footer_logo">
+          <img src="{{img_url}}{{info_data?.logo_foot}}" alt=""> 
+         </div> 
+         <ul class="footermenu">
+            <li ><a routerLink="/home">Home</a></li>
+           <li ><a routerLink="/about-us">About Us</a></li>
+           <li><a routerLink="/missions">Missions</a></li>
+           <li><a routerLink="/sermon">Sermons</a><li>
+           <li><a routerLink="statement-of-faith">Statement of Faith</a><li>
+           <li><a routerLink="/service">Services </a></li>
+           <li><a routerLink="/gallery">Gallery</a></li>
+           <li><a routerLink="/blog">Blog </a></li>  
+           <li ><a routerLink="/contact-us">Contact</a></li>
+         </ul>
+         <ul class="footeradress">
+           <li><a href="tel:{{info_data?.phone}}"><span><i class="fas fa-phone-alt"></i></span>{{info_data?.phone}}</a></li>
+           <li><a href="mailto:{{info_data?.email}}"><span><i class="fas fa-envelope"></i></span>{{info_data?.email}}</a></li> 
+           <li><a><span><i class="fas fa-map-marker-alt"></i></span>{{info_data?.address}}</a></li>
+        </ul>
+        <!-- <ul class="footerapplogo">
+           <li><a href="j{{info_data?.app_store}}"><img src="assets/images/applogo.png" alt=""></a></li>
+           <li><a href="{{info_data?.google_store}}"><img src="assets/images/applogo1.png" alt=""></a></li>
+       </ul> -->
+       <ul class="footersocalbox">
+        <li><a href="{{info_data?.facebook}}"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="{{info_data?.twitter}}"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="mailto:{{info_data?.email}}"><i class="fab fa-google-plus-g"></i></a></li>
+        <li><a href="{{info_data?.linkedin}}"><i class="fab fa-linkedin-in"></i></a></li>
+       </ul>
+       </div>
+     </div>
+     <div class="footer_bottom">
+       <div class="container">
+         <p [innerHtml]="info_data?.copyright"></p>
+       </div>
+    </div>
+  </footer>

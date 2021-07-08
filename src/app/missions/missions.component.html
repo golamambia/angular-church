@@ -1,0 +1,36 @@
+<div class="subbanner_area" style="background-image:url(assets/images/innerbanner.jpg);">
+  <div class="container">
+      <h2>missionary</h2>
+    </div>
+ </div>
+
+<div class="mainarea missionarybox p-9 pt-4 ">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-12" *ngFor="let data_miss of data_missions">
+           <div class="ourblog_box">
+            <a routerLink="/missions-details/{{data_miss.countryid}}">
+              <div class="thumbule">
+              <img src="{{img_url}}mission/{{data_miss.icon}}" alt="">
+             </div>
+             <div class="ourblog_body">
+               <div class="dated">{{data_miss.name}}</div>
+               <p>{{data_miss.short_description | slice:0:100}}[...]</p>
+                <a routerLink="/missions-details/{{data_miss.countryid}}" class="btn btn-light">Learn more</a>
+             </div>
+             </a>
+           </div>
+       </div>
+
+
+       
+
+
+    </div>
+<ngx-spinner bdColor="rgb(51 51 51 / 28%)" size="default" type="ball-spin-clockwise">  
+    <!-- <p style="color: white">Please Wait. </p> -->  
+    </ngx-spinner>
+
+  </div>
+</div>

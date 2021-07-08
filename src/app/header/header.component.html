@@ -1,0 +1,66 @@
+
+ <!-- header css Start -->
+  <header class="navigation-wrap bg-light start-header start-style clearfix" id="topheader">
+    <div class="container clearfix">
+      <div class="logomain" routerLink="/">
+        <img src="{{img_url}}{{info_head_data?.logo}}" alt="">
+      </div>
+     <div class="menu">
+                
+                    <div class="menuButton">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    
+                   <ul >
+                    <li routerLinkActive="active" >><a routerLink="/home" (click)="closeMenu()">Home</a></li>
+                    <li routerLinkActive="active" >
+                      <a routerLink="/about-us" (click)="closeMenu()">About Us<span><i class="fas fa-angle-down"></i></span></a>
+                      <ul>
+                          <li><a routerLink="/about-us" (click)="closeMenu()">ABOUT CHURCH</a></li>
+                          <li><a routerLink="/our-history" (click)="closeMenu()">OUR HISTORY</a></li>
+                          <li><a routerLink="/send-prayer-request" (click)="closeMenu()">SEND PRAYER REQUEST</a></li>
+                          <li><a routerLink="/who-we-are" (click)="closeMenu()">WHO WE ARE</a></li>
+                          <li><a routerLink="/staff" (click)="closeMenu()">STAFF</a></li>
+                          <li><a routerLink="/become-a-member" (click)="closeMenu()">BECOME A MEMBER</a></li>
+                        </ul>
+                    </li>
+                   
+                   <li routerLinkActive="active" ><a routerLink="/sermon">Sermons<span><i class="fas fa-angle-down"></i></span></a>
+                       <ul>
+                          <li ><a target="_blank"  href="http://www.sermonaudio.com/wpbc">Sermon Audio</a></li>
+                          
+                         
+                         
+                       </ul>
+                    </li>
+                    <li routerLinkActive="active" ><a routerLink="statement-of-faith"  (click)="closeMenu()">Statement of Faith</a></li>
+                    <li routerLinkActive="active" ><a routerLink="/service" (click)="closeMenu()">Services<span><i class="fas fa-angle-down"></i></span></a>
+                       <ul>
+                          <li *ngFor="let data_list of service_list" routerLink="/service-details/{{data_list.id}}" (click)="closeMenu()"><a href="javascript:void(0)">{{data_list.title}}</a></li>
+                          
+                         
+                          <li (click)="closeMenu()"><a routerLink="/live">LIVE</a></li>
+                       </ul>
+                    </li>
+                    
+                     <li routerLinkActive="active" (click)="closeMenu()"><a routerLink="/gallery">Gallery<span><i class="fas fa-angle-down"></i></span></a>
+                       <ul>
+                          <li (click)="closeMenu()"><a routerLink="/blog">Blog</a></li>
+                          
+                         
+                         
+                       </ul>
+                    </li>
+                    <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+true}"><a routerLink="/missions" (click)="closeMenu()">Missions</a></li>
+                    <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+true}"><a routerLink="/contact-us" (click)="closeMenu()">Contact</a></li>
+                  </ul>
+                    
+                </div>
+            
+      </div>
+   
+  </header> 

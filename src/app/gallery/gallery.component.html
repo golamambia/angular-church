@@ -1,0 +1,29 @@
+
+<div class="subbanner_area" style="background-image:url(assets/images/innerbanner.jpg);">
+  <div class="container">
+      <h2>Gallery</h2>
+    </div>
+ </div>
+
+ <div class="mainarea p-9">
+   <div class="container">
+     <div class="gallery_innerpage">
+       <div class="row">
+
+         <div class="col-lg-3 col-md-4 col-sm-6 col-6" *ngFor="let datalist of data_list">
+           <div class="gallery_innerthumble">
+               <a data-fancybox href="{{img_url}}gallery/{{datalist.g_image}}">
+              <img src="{{img_url}}gallery/{{datalist.g_image}}" alt=""></a>
+           </div>
+         </div>
+
+        
+       </div>
+
+          <ngx-spinner bdColor="rgb(51 51 51 / 28%)" size="default" type="ball-spin-clockwise">  
+    <!-- <p style="color: white">Please Wait. </p> -->  
+    </ngx-spinner>
+       
+     </div>
+   </div>
+ </div>
